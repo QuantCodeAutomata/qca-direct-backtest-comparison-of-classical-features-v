@@ -1,0 +1,300 @@
+2026-08-05 16:02:41,472 INFO Pass: UnrollCustomDefinitions - 0.15664 (ms)
+2026-08-05 16:02:41,473 INFO Pass: BasisTranslator - 0.03576 (ms)
+2026-08-05 16:02:43,045 INFO Running all experiments with compact parameters: {'n_events_sample': 200, 'n_qubits': 8, 'training_sizes': [50, 100], 'blinding_days': [0, 1], 'model_families': ['LR', 'XGB'], 'save_dir': 'results', 'random_seed': 42, 'fast': True}
+2026-08-05 16:02:43,045 INFO ============================================================
+2026-08-05 16:02:43,045 INFO Starting Experiment 1 (Direct Backtest)
+2026-08-05 16:02:43,045 INFO Loading RFQ data …
+2026-08-05 16:02:43,045 INFO Loading RFQ data from /workspace/project/data/rfq_active_window.parquet
+2026-08-05 16:02:43,730 INFO Loaded 143912 rows, 222 columns.
+2026-08-05 16:02:43,901 INFO Dataset validated: 143912 rows, 216 feature columns, fill rate=0.4038.
+2026-08-05 16:02:44,155 INFO Temporal filter [2024-07-24, 2024-10-29]: removed 0 events (143912 → 143912).
+2026-08-05 16:02:44,430 INFO Maturity filter: removed 7135 events with maturing bonds (143912 → 136777).
+2026-08-05 16:02:44,542 INFO Sampling 200 events …
+2026-08-05 16:02:44,542 INFO sample_representative: n=200, seed=42
+2026-08-05 16:02:44,579 INFO   Day 2024-07-24: allocated 2 / 1871 events (seed=191664964)
+2026-08-05 16:02:44,583 INFO   Day 2024-07-25: allocated 3 / 1917 events (seed=1662057958)
+2026-08-05 16:02:44,585 INFO   Day 2024-07-26: allocated 3 / 1923 events (seed=1405681632)
+2026-08-05 16:02:44,588 INFO   Day 2024-07-29: allocated 3 / 1979 events (seed=942484272)
+2026-08-05 16:02:44,591 INFO   Day 2024-07-30: allocated 3 / 1996 events (seed=929893138)
+2026-08-05 16:02:44,593 INFO   Day 2024-07-31: allocated 3 / 2016 events (seed=1843824993)
+2026-08-05 16:02:44,596 INFO   Day 2024-08-01: allocated 3 / 1933 events (seed=184566854)
+2026-08-05 16:02:44,599 INFO   Day 2024-08-02: allocated 2 / 1889 events (seed=1497586439)
+2026-08-05 16:02:44,601 INFO   Day 2024-08-05: allocated 3 / 2002 events (seed=432652533)
+2026-08-05 16:02:44,606 INFO   Day 2024-08-06: allocated 3 / 1919 events (seed=202244314)
+2026-08-05 16:02:44,609 INFO   Day 2024-08-07: allocated 3 / 1959 events (seed=1130604998)
+2026-08-05 16:02:44,612 INFO   Day 2024-08-08: allocated 3 / 2002 events (seed=2095133046)
+2026-08-05 16:02:44,614 INFO   Day 2024-08-09: allocated 3 / 1936 events (seed=1580016184)
+2026-08-05 16:02:44,617 INFO   Day 2024-08-12: allocated 2 / 1908 events (seed=1634535063)
+2026-08-05 16:02:44,619 INFO   Day 2024-08-13: allocated 3 / 1924 events (seed=1540770720)
+2026-08-05 16:02:44,622 INFO   Day 2024-08-14: allocated 3 / 1998 events (seed=1688060241)
+2026-08-05 16:02:44,624 INFO   Day 2024-08-15: allocated 3 / 1985 events (seed=1102145673)
+2026-08-05 16:02:44,627 INFO   Day 2024-08-16: allocated 3 / 2025 events (seed=275121931)
+2026-08-05 16:02:44,629 INFO   Day 2024-08-19: allocated 3 / 1967 events (seed=1803345591)
+2026-08-05 16:02:44,632 INFO   Day 2024-08-20: allocated 3 / 1963 events (seed=967196436)
+2026-08-05 16:02:44,635 INFO   Day 2024-08-21: allocated 3 / 1972 events (seed=1074497556)
+2026-08-05 16:02:44,637 INFO   Day 2024-08-22: allocated 3 / 1949 events (seed=796282693)
+2026-08-05 16:02:44,640 INFO   Day 2024-08-23: allocated 3 / 1982 events (seed=392022359)
+2026-08-05 16:02:44,643 INFO   Day 2024-08-26: allocated 3 / 1966 events (seed=1990212659)
+2026-08-05 16:02:44,646 INFO   Day 2024-08-27: allocated 3 / 1983 events (seed=1678403331)
+2026-08-05 16:02:44,649 INFO   Day 2024-08-28: allocated 3 / 1973 events (seed=1382689816)
+2026-08-05 16:02:44,651 INFO   Day 2024-08-29: allocated 2 / 1912 events (seed=864178267)
+2026-08-05 16:02:44,654 INFO   Day 2024-08-30: allocated 3 / 1938 events (seed=1766867110)
+2026-08-05 16:02:44,656 INFO   Day 2024-09-02: allocated 3 / 1962 events (seed=1171300113)
+2026-08-05 16:02:44,659 INFO   Day 2024-09-03: allocated 3 / 1937 events (seed=952224741)
+2026-08-05 16:02:44,661 INFO   Day 2024-09-04: allocated 3 / 1940 events (seed=967354525)
+2026-08-05 16:02:44,664 INFO   Day 2024-09-05: allocated 3 / 1945 events (seed=487991439)
+2026-08-05 16:02:44,666 INFO   Day 2024-09-06: allocated 3 / 2010 events (seed=197860369)
+2026-08-05 16:02:44,669 INFO   Day 2024-09-09: allocated 3 / 1928 events (seed=1190961761)
+2026-08-05 16:02:44,671 INFO   Day 2024-09-10: allocated 3 / 1940 events (seed=1906728919)
+2026-08-05 16:02:44,674 INFO   Day 2024-09-11: allocated 3 / 2007 events (seed=137046513)
+2026-08-05 16:02:44,676 INFO   Day 2024-09-12: allocated 3 / 1936 events (seed=1843166519)
+2026-08-05 16:02:44,679 INFO   Day 2024-09-13: allocated 2 / 1897 events (seed=1777324408)
+2026-08-05 16:02:44,682 INFO   Day 2024-09-16: allocated 3 / 1978 events (seed=594336918)
+2026-08-05 16:02:44,684 INFO   Day 2024-09-17: allocated 3 / 1934 events (seed=1356488968)
+2026-08-05 16:02:44,687 INFO   Day 2024-09-18: allocated 3 / 1988 events (seed=354826746)
+2026-08-05 16:02:44,689 INFO   Day 2024-09-19: allocated 2 / 1863 events (seed=1627981025)
+2026-08-05 16:02:44,692 INFO   Day 2024-09-20: allocated 3 / 1914 events (seed=1504361615)
+2026-08-05 16:02:44,695 INFO   Day 2024-09-23: allocated 3 / 1978 events (seed=761338719)
+2026-08-05 16:02:44,698 INFO   Day 2024-09-24: allocated 2 / 1892 events (seed=145857092)
+2026-08-05 16:02:44,700 INFO   Day 2024-09-25: allocated 3 / 1979 events (seed=2084558134)
+2026-08-05 16:02:44,703 INFO   Day 2024-09-26: allocated 3 / 1947 events (seed=957106590)
+2026-08-05 16:02:44,705 INFO   Day 2024-09-27: allocated 2 / 1902 events (seed=1917963003)
+2026-08-05 16:02:44,708 INFO   Day 2024-09-30: allocated 3 / 1957 events (seed=1455819992)
+2026-08-05 16:02:44,710 INFO   Day 2024-10-01: allocated 3 / 1965 events (seed=1671565831)
+2026-08-05 16:02:44,713 INFO   Day 2024-10-02: allocated 3 / 1933 events (seed=1631871624)
+2026-08-05 16:02:44,715 INFO   Day 2024-10-03: allocated 3 / 1929 events (seed=417983442)
+2026-08-05 16:02:44,718 INFO   Day 2024-10-04: allocated 3 / 1978 events (seed=781482251)
+2026-08-05 16:02:44,721 INFO   Day 2024-10-07: allocated 3 / 1923 events (seed=1002275723)
+2026-08-05 16:02:44,723 INFO   Day 2024-10-08: allocated 2 / 1882 events (seed=1068999196)
+2026-08-05 16:02:44,726 INFO   Day 2024-10-09: allocated 3 / 2003 events (seed=94067870)
+2026-08-05 16:02:44,728 INFO   Day 2024-10-10: allocated 3 / 2042 events (seed=1173749072)
+2026-08-05 16:02:44,731 INFO   Day 2024-10-11: allocated 2 / 1872 events (seed=331334161)
+2026-08-05 16:02:44,734 INFO   Day 2024-10-14: allocated 3 / 1922 events (seed=1596387605)
+2026-08-05 16:02:44,736 INFO   Day 2024-10-15: allocated 3 / 1987 events (seed=1466836457)
+2026-08-05 16:02:44,739 INFO   Day 2024-10-16: allocated 3 / 2015 events (seed=1981113450)
+2026-08-05 16:02:44,742 INFO   Day 2024-10-17: allocated 3 / 1953 events (seed=1599364551)
+2026-08-05 16:02:44,744 INFO   Day 2024-10-18: allocated 3 / 2011 events (seed=787359109)
+2026-08-05 16:02:44,747 INFO   Day 2024-10-21: allocated 3 / 1941 events (seed=2077711329)
+2026-08-05 16:02:44,750 INFO   Day 2024-10-22: allocated 3 / 1927 events (seed=882294417)
+2026-08-05 16:02:44,752 INFO   Day 2024-10-23: allocated 3 / 1951 events (seed=699704628)
+2026-08-05 16:02:44,754 INFO   Day 2024-10-24: allocated 3 / 1987 events (seed=1944623249)
+2026-08-05 16:02:44,757 INFO   Day 2024-10-25: allocated 3 / 1923 events (seed=795556160)
+2026-08-05 16:02:44,759 INFO   Day 2024-10-28: allocated 3 / 2018 events (seed=163945743)
+2026-08-05 16:02:44,762 INFO   Day 2024-10-29: allocated 3 / 1994 events (seed=1008363426)
+2026-08-05 16:02:44,771 INFO sample_representative complete: 200 events drawn from 70 trading days.
+2026-08-05 16:02:44,773 INFO Sample ready: 200 events, 216 classical features, fill rate=0.340
+2026-08-05 16:02:44,773 INFO Computing PQFM features: sim_short …
+2026-08-05 16:03:01,972 INFO   sim_short: shape (200, 24)
+2026-08-05 16:03:01,972 INFO Computing PQFM features: sim_long …
+2026-08-05 16:03:29,659 INFO   sim_long: shape (200, 24)
+2026-08-05 16:03:29,659 INFO Computing PQFM features: hardware …
+2026-08-05 16:03:32,582 INFO   hardware: shape (200, 24)
+2026-08-05 16:03:32,582 INFO Running backtest: classical …
+2026-08-05 16:03:32,584 INFO run_all: starting 8 combinations.
+2026-08-05 16:03:32,584 INFO run_all progress: 0/8 – family=LR, training_size=50, blinding_day=0
+2026-08-05 16:06:25,002 INFO run_all: completed 8 combinations, 220 result rows.
+2026-08-05 16:06:25,004 INFO Running backtest: sim_short …
+2026-08-05 16:06:25,006 INFO run_all: starting 8 combinations.
+2026-08-05 16:06:25,006 INFO run_all progress: 0/8 – family=LR, training_size=50, blinding_day=0
+2026-08-05 16:07:45,666 INFO run_all: completed 8 combinations, 220 result rows.
+2026-08-05 16:07:45,668 INFO Running backtest: sim_long …
+2026-08-05 16:07:45,670 INFO run_all: starting 8 combinations.
+2026-08-05 16:07:45,670 INFO run_all progress: 0/8 – family=LR, training_size=50, blinding_day=0
+2026-08-05 16:09:09,008 INFO run_all: completed 8 combinations, 220 result rows.
+2026-08-05 16:09:09,010 INFO Running backtest: hardware …
+2026-08-05 16:09:09,012 INFO run_all: starting 8 combinations.
+2026-08-05 16:09:09,012 INFO run_all progress: 0/8 – family=LR, training_size=50, blinding_day=0
+2026-08-05 16:10:31,385 INFO run_all: completed 8 combinations, 220 result rows.
+2026-08-05 16:10:31,388 INFO Aggregating results …
+2026-08-05 16:10:31,401 INFO Saved metrics → results/metrics_exp1.csv
+2026-08-05 16:10:31,415 INFO Saved markdown → results/RESULTS_exp1.md
+2026-08-05 16:10:34,550 INFO Experiment 1 complete.
+2026-08-05 16:10:34,557 INFO Experiment 1 (Direct Backtest) completed in 471.5 s
+2026-08-05 16:10:34,558 INFO ============================================================
+2026-08-05 16:10:34,558 INFO Starting Experiment 2 (CQEM)
+2026-08-05 16:10:34,558 INFO Loading RFQ data (need ~400 events) …
+2026-08-05 16:10:34,558 INFO Loading RFQ data from /workspace/project/data/rfq_active_window.parquet
+2026-08-05 16:10:35,133 INFO Loaded 143912 rows, 222 columns.
+2026-08-05 16:10:35,284 INFO Dataset validated: 143912 rows, 216 feature columns, fill rate=0.4038.
+2026-08-05 16:10:35,515 INFO Temporal filter [2024-07-24, 2024-10-29]: removed 0 events (143912 → 143912).
+2026-08-05 16:10:35,789 INFO Maturity filter: removed 7135 events with maturing bonds (143912 → 136777).
+2026-08-05 16:10:35,896 INFO Sampling 400 events …
+2026-08-05 16:10:35,897 INFO sample_representative: n=400, seed=42
+2026-08-05 16:10:35,935 INFO   Day 2024-07-24: allocated 5 / 1871 events (seed=191664964)
+2026-08-05 16:10:35,938 INFO   Day 2024-07-25: allocated 5 / 1917 events (seed=1662057958)
+2026-08-05 16:10:35,940 INFO   Day 2024-07-26: allocated 5 / 1923 events (seed=1405681632)
+2026-08-05 16:10:35,943 INFO   Day 2024-07-29: allocated 6 / 1979 events (seed=942484272)
+2026-08-05 16:10:35,945 INFO   Day 2024-07-30: allocated 6 / 1996 events (seed=929893138)
+2026-08-05 16:10:35,948 INFO   Day 2024-07-31: allocated 6 / 2016 events (seed=1843824993)
+2026-08-05 16:10:35,950 INFO   Day 2024-08-01: allocated 6 / 1933 events (seed=184566854)
+2026-08-05 16:10:35,952 INFO   Day 2024-08-02: allocated 5 / 1889 events (seed=1497586439)
+2026-08-05 16:10:35,955 INFO   Day 2024-08-05: allocated 6 / 2002 events (seed=432652533)
+2026-08-05 16:10:35,957 INFO   Day 2024-08-06: allocated 5 / 1919 events (seed=202244314)
+2026-08-05 16:10:35,960 INFO   Day 2024-08-07: allocated 6 / 1959 events (seed=1130604998)
+2026-08-05 16:10:35,962 INFO   Day 2024-08-08: allocated 6 / 2002 events (seed=2095133046)
+2026-08-05 16:10:35,964 INFO   Day 2024-08-09: allocated 6 / 1936 events (seed=1580016184)
+2026-08-05 16:10:35,969 INFO   Day 2024-08-12: allocated 5 / 1908 events (seed=1634535063)
+2026-08-05 16:10:35,971 INFO   Day 2024-08-13: allocated 5 / 1924 events (seed=1540770720)
+2026-08-05 16:10:35,974 INFO   Day 2024-08-14: allocated 6 / 1998 events (seed=1688060241)
+2026-08-05 16:10:35,976 INFO   Day 2024-08-15: allocated 6 / 1985 events (seed=1102145673)
+2026-08-05 16:10:35,979 INFO   Day 2024-08-16: allocated 6 / 2025 events (seed=275121931)
+2026-08-05 16:10:35,982 INFO   Day 2024-08-19: allocated 6 / 1967 events (seed=1803345591)
+2026-08-05 16:10:35,985 INFO   Day 2024-08-20: allocated 6 / 1963 events (seed=967196436)
+2026-08-05 16:10:35,988 INFO   Day 2024-08-21: allocated 6 / 1972 events (seed=1074497556)
+2026-08-05 16:10:35,991 INFO   Day 2024-08-22: allocated 6 / 1949 events (seed=796282693)
+2026-08-05 16:10:35,994 INFO   Day 2024-08-23: allocated 6 / 1982 events (seed=392022359)
+2026-08-05 16:10:35,997 INFO   Day 2024-08-26: allocated 6 / 1966 events (seed=1990212659)
+2026-08-05 16:10:36,000 INFO   Day 2024-08-27: allocated 6 / 1983 events (seed=1678403331)
+2026-08-05 16:10:36,003 INFO   Day 2024-08-28: allocated 6 / 1973 events (seed=1382689816)
+2026-08-05 16:10:36,005 INFO   Day 2024-08-29: allocated 5 / 1912 events (seed=864178267)
+2026-08-05 16:10:36,007 INFO   Day 2024-08-30: allocated 6 / 1938 events (seed=1766867110)
+2026-08-05 16:10:36,010 INFO   Day 2024-09-02: allocated 6 / 1962 events (seed=1171300113)
+2026-08-05 16:10:36,012 INFO   Day 2024-09-03: allocated 6 / 1937 events (seed=952224741)
+2026-08-05 16:10:36,014 INFO   Day 2024-09-04: allocated 6 / 1940 events (seed=967354525)
+2026-08-05 16:10:36,016 INFO   Day 2024-09-05: allocated 6 / 1945 events (seed=487991439)
+2026-08-05 16:10:36,018 INFO   Day 2024-09-06: allocated 6 / 2010 events (seed=197860369)
+2026-08-05 16:10:36,021 INFO   Day 2024-09-09: allocated 5 / 1928 events (seed=1190961761)
+2026-08-05 16:10:36,023 INFO   Day 2024-09-10: allocated 6 / 1940 events (seed=1906728919)
+2026-08-05 16:10:36,025 INFO   Day 2024-09-11: allocated 6 / 2007 events (seed=137046513)
+2026-08-05 16:10:36,028 INFO   Day 2024-09-12: allocated 6 / 1936 events (seed=1843166519)
+2026-08-05 16:10:36,031 INFO   Day 2024-09-13: allocated 5 / 1897 events (seed=1777324408)
+2026-08-05 16:10:36,033 INFO   Day 2024-09-16: allocated 6 / 1978 events (seed=594336918)
+2026-08-05 16:10:36,036 INFO   Day 2024-09-17: allocated 6 / 1934 events (seed=1356488968)
+2026-08-05 16:10:36,038 INFO   Day 2024-09-18: allocated 6 / 1988 events (seed=354826746)
+2026-08-05 16:10:36,040 INFO   Day 2024-09-19: allocated 5 / 1863 events (seed=1627981025)
+2026-08-05 16:10:36,043 INFO   Day 2024-09-20: allocated 5 / 1914 events (seed=1504361615)
+2026-08-05 16:10:36,045 INFO   Day 2024-09-23: allocated 6 / 1978 events (seed=761338719)
+2026-08-05 16:10:36,047 INFO   Day 2024-09-24: allocated 5 / 1892 events (seed=145857092)
+2026-08-05 16:10:36,049 INFO   Day 2024-09-25: allocated 6 / 1979 events (seed=2084558134)
+2026-08-05 16:10:36,052 INFO   Day 2024-09-26: allocated 6 / 1947 events (seed=957106590)
+2026-08-05 16:10:36,054 INFO   Day 2024-09-27: allocated 5 / 1902 events (seed=1917963003)
+2026-08-05 16:10:36,056 INFO   Day 2024-09-30: allocated 6 / 1957 events (seed=1455819992)
+2026-08-05 16:10:36,058 INFO   Day 2024-10-01: allocated 6 / 1965 events (seed=1671565831)
+2026-08-05 16:10:36,060 INFO   Day 2024-10-02: allocated 6 / 1933 events (seed=1631871624)
+2026-08-05 16:10:36,062 INFO   Day 2024-10-03: allocated 6 / 1929 events (seed=417983442)
+2026-08-05 16:10:36,065 INFO   Day 2024-10-04: allocated 6 / 1978 events (seed=781482251)
+2026-08-05 16:10:36,067 INFO   Day 2024-10-07: allocated 5 / 1923 events (seed=1002275723)
+2026-08-05 16:10:36,069 INFO   Day 2024-10-08: allocated 5 / 1882 events (seed=1068999196)
+2026-08-05 16:10:36,071 INFO   Day 2024-10-09: allocated 6 / 2003 events (seed=94067870)
+2026-08-05 16:10:36,073 INFO   Day 2024-10-10: allocated 6 / 2042 events (seed=1173749072)
+2026-08-05 16:10:36,075 INFO   Day 2024-10-11: allocated 5 / 1872 events (seed=331334161)
+2026-08-05 16:10:36,077 INFO   Day 2024-10-14: allocated 5 / 1922 events (seed=1596387605)
+2026-08-05 16:10:36,080 INFO   Day 2024-10-15: allocated 6 / 1987 events (seed=1466836457)
+2026-08-05 16:10:36,082 INFO   Day 2024-10-16: allocated 6 / 2015 events (seed=1981113450)
+2026-08-05 16:10:36,084 INFO   Day 2024-10-17: allocated 6 / 1953 events (seed=1599364551)
+2026-08-05 16:10:36,086 INFO   Day 2024-10-18: allocated 6 / 2011 events (seed=787359109)
+2026-08-05 16:10:36,088 INFO   Day 2024-10-21: allocated 6 / 1941 events (seed=2077711329)
+2026-08-05 16:10:36,090 INFO   Day 2024-10-22: allocated 5 / 1927 events (seed=882294417)
+2026-08-05 16:10:36,092 INFO   Day 2024-10-23: allocated 6 / 1951 events (seed=699704628)
+2026-08-05 16:10:36,094 INFO   Day 2024-10-24: allocated 6 / 1987 events (seed=1944623249)
+2026-08-05 16:10:36,096 INFO   Day 2024-10-25: allocated 5 / 1923 events (seed=795556160)
+2026-08-05 16:10:36,098 INFO   Day 2024-10-28: allocated 6 / 2018 events (seed=163945743)
+2026-08-05 16:10:36,100 INFO   Day 2024-10-29: allocated 6 / 1994 events (seed=1008363426)
+2026-08-05 16:10:36,108 INFO sample_representative complete: 400 events drawn from 70 trading days.
+2026-08-05 16:10:36,110 INFO Library: 200 events, Unseen: 200 events
+2026-08-05 16:10:36,111 INFO Computing hardware-long PQFM for library events …
+2026-08-05 16:10:38,656 INFO Library PQFM shape: (200, 24)
+2026-08-05 16:10:38,657 INFO CQEM with N_bins=4 …
+2026-08-05 16:10:38,679 INFO   N_bins=4: coverage=0.000 (0/200), kappas=200
+2026-08-05 16:10:38,690 WARNING   Too few matched events (0) for backtest, skipping.
+2026-08-05 16:10:38,691 INFO CQEM with N_bins=10 …
+2026-08-05 16:10:38,713 INFO   N_bins=10: coverage=0.000 (0/200), kappas=200
+2026-08-05 16:10:38,723 WARNING   Too few matched events (0) for backtest, skipping.
+2026-08-05 16:10:38,724 INFO CQEM with N_bins=30 …
+2026-08-05 16:10:38,745 INFO   N_bins=30: coverage=0.000 (0/200), kappas=200
+2026-08-05 16:10:38,756 WARNING   Too few matched events (0) for backtest, skipping.
+2026-08-05 16:10:38,758 INFO Saved coverage stats → results/coverage_exp2.csv
+2026-08-05 16:10:38,758 WARNING No backtest results produced.
+2026-08-05 16:10:38,759 INFO Experiment 2 complete.
+2026-08-05 16:10:38,766 INFO Experiment 2 (CQEM) completed in 4.2 s
+2026-08-05 16:10:38,767 INFO ============================================================
+2026-08-05 16:10:38,767 INFO Starting Experiment 3 (Robustness)
+2026-08-05 16:10:38,767 INFO Loading RFQ data …
+2026-08-05 16:10:38,767 INFO Loading RFQ data from /workspace/project/data/rfq_active_window.parquet
+2026-08-05 16:10:39,268 INFO Loaded 143912 rows, 222 columns.
+2026-08-05 16:10:39,426 INFO Dataset validated: 143912 rows, 216 feature columns, fill rate=0.4038.
+2026-08-05 16:10:39,689 INFO Temporal filter [2024-07-24, 2024-10-29]: removed 0 events (143912 → 143912).
+2026-08-05 16:10:39,978 INFO Maturity filter: removed 7135 events with maturing bonds (143912 → 136777).
+2026-08-05 16:10:40,095 INFO Sampling 200 events …
+2026-08-05 16:10:40,095 INFO sample_representative: n=200, seed=42
+2026-08-05 16:10:40,133 INFO   Day 2024-07-24: allocated 2 / 1871 events (seed=191664964)
+2026-08-05 16:10:40,137 INFO   Day 2024-07-25: allocated 3 / 1917 events (seed=1662057958)
+2026-08-05 16:10:40,139 INFO   Day 2024-07-26: allocated 3 / 1923 events (seed=1405681632)
+2026-08-05 16:10:40,142 INFO   Day 2024-07-29: allocated 3 / 1979 events (seed=942484272)
+2026-08-05 16:10:40,145 INFO   Day 2024-07-30: allocated 3 / 1996 events (seed=929893138)
+2026-08-05 16:10:40,147 INFO   Day 2024-07-31: allocated 3 / 2016 events (seed=1843824993)
+2026-08-05 16:10:40,150 INFO   Day 2024-08-01: allocated 3 / 1933 events (seed=184566854)
+2026-08-05 16:10:40,153 INFO   Day 2024-08-02: allocated 2 / 1889 events (seed=1497586439)
+2026-08-05 16:10:40,155 INFO   Day 2024-08-05: allocated 3 / 2002 events (seed=432652533)
+2026-08-05 16:10:40,158 INFO   Day 2024-08-06: allocated 3 / 1919 events (seed=202244314)
+2026-08-05 16:10:40,160 INFO   Day 2024-08-07: allocated 3 / 1959 events (seed=1130604998)
+2026-08-05 16:10:40,163 INFO   Day 2024-08-08: allocated 3 / 2002 events (seed=2095133046)
+2026-08-05 16:10:40,165 INFO   Day 2024-08-09: allocated 3 / 1936 events (seed=1580016184)
+2026-08-05 16:10:40,170 INFO   Day 2024-08-12: allocated 2 / 1908 events (seed=1634535063)
+2026-08-05 16:10:40,172 INFO   Day 2024-08-13: allocated 3 / 1924 events (seed=1540770720)
+2026-08-05 16:10:40,175 INFO   Day 2024-08-14: allocated 3 / 1998 events (seed=1688060241)
+2026-08-05 16:10:40,177 INFO   Day 2024-08-15: allocated 3 / 1985 events (seed=1102145673)
+2026-08-05 16:10:40,180 INFO   Day 2024-08-16: allocated 3 / 2025 events (seed=275121931)
+2026-08-05 16:10:40,183 INFO   Day 2024-08-19: allocated 3 / 1967 events (seed=1803345591)
+2026-08-05 16:10:40,185 INFO   Day 2024-08-20: allocated 3 / 1963 events (seed=967196436)
+2026-08-05 16:10:40,188 INFO   Day 2024-08-21: allocated 3 / 1972 events (seed=1074497556)
+2026-08-05 16:10:40,191 INFO   Day 2024-08-22: allocated 3 / 1949 events (seed=796282693)
+2026-08-05 16:10:40,193 INFO   Day 2024-08-23: allocated 3 / 1982 events (seed=392022359)
+2026-08-05 16:10:40,196 INFO   Day 2024-08-26: allocated 3 / 1966 events (seed=1990212659)
+2026-08-05 16:10:40,198 INFO   Day 2024-08-27: allocated 3 / 1983 events (seed=1678403331)
+2026-08-05 16:10:40,201 INFO   Day 2024-08-28: allocated 3 / 1973 events (seed=1382689816)
+2026-08-05 16:10:40,203 INFO   Day 2024-08-29: allocated 2 / 1912 events (seed=864178267)
+2026-08-05 16:10:40,206 INFO   Day 2024-08-30: allocated 3 / 1938 events (seed=1766867110)
+2026-08-05 16:10:40,208 INFO   Day 2024-09-02: allocated 3 / 1962 events (seed=1171300113)
+2026-08-05 16:10:40,211 INFO   Day 2024-09-03: allocated 3 / 1937 events (seed=952224741)
+2026-08-05 16:10:40,214 INFO   Day 2024-09-04: allocated 3 / 1940 events (seed=967354525)
+2026-08-05 16:10:40,216 INFO   Day 2024-09-05: allocated 3 / 1945 events (seed=487991439)
+2026-08-05 16:10:40,219 INFO   Day 2024-09-06: allocated 3 / 2010 events (seed=197860369)
+2026-08-05 16:10:40,221 INFO   Day 2024-09-09: allocated 3 / 1928 events (seed=1190961761)
+2026-08-05 16:10:40,224 INFO   Day 2024-09-10: allocated 3 / 1940 events (seed=1906728919)
+2026-08-05 16:10:40,226 INFO   Day 2024-09-11: allocated 3 / 2007 events (seed=137046513)
+2026-08-05 16:10:40,229 INFO   Day 2024-09-12: allocated 3 / 1936 events (seed=1843166519)
+2026-08-05 16:10:40,231 INFO   Day 2024-09-13: allocated 2 / 1897 events (seed=1777324408)
+2026-08-05 16:10:40,234 INFO   Day 2024-09-16: allocated 3 / 1978 events (seed=594336918)
+2026-08-05 16:10:40,236 INFO   Day 2024-09-17: allocated 3 / 1934 events (seed=1356488968)
+2026-08-05 16:10:40,239 INFO   Day 2024-09-18: allocated 3 / 1988 events (seed=354826746)
+2026-08-05 16:10:40,241 INFO   Day 2024-09-19: allocated 2 / 1863 events (seed=1627981025)
+2026-08-05 16:10:40,243 INFO   Day 2024-09-20: allocated 3 / 1914 events (seed=1504361615)
+2026-08-05 16:10:40,246 INFO   Day 2024-09-23: allocated 3 / 1978 events (seed=761338719)
+2026-08-05 16:10:40,248 INFO   Day 2024-09-24: allocated 2 / 1892 events (seed=145857092)
+2026-08-05 16:10:40,251 INFO   Day 2024-09-25: allocated 3 / 1979 events (seed=2084558134)
+2026-08-05 16:10:40,254 INFO   Day 2024-09-26: allocated 3 / 1947 events (seed=957106590)
+2026-08-05 16:10:40,257 INFO   Day 2024-09-27: allocated 2 / 1902 events (seed=1917963003)
+2026-08-05 16:10:40,259 INFO   Day 2024-09-30: allocated 3 / 1957 events (seed=1455819992)
+2026-08-05 16:10:40,262 INFO   Day 2024-10-01: allocated 3 / 1965 events (seed=1671565831)
+2026-08-05 16:10:40,264 INFO   Day 2024-10-02: allocated 3 / 1933 events (seed=1631871624)
+2026-08-05 16:10:40,267 INFO   Day 2024-10-03: allocated 3 / 1929 events (seed=417983442)
+2026-08-05 16:10:40,269 INFO   Day 2024-10-04: allocated 3 / 1978 events (seed=781482251)
+2026-08-05 16:10:40,272 INFO   Day 2024-10-07: allocated 3 / 1923 events (seed=1002275723)
+2026-08-05 16:10:40,274 INFO   Day 2024-10-08: allocated 2 / 1882 events (seed=1068999196)
+2026-08-05 16:10:40,276 INFO   Day 2024-10-09: allocated 3 / 2003 events (seed=94067870)
+2026-08-05 16:10:40,279 INFO   Day 2024-10-10: allocated 3 / 2042 events (seed=1173749072)
+2026-08-05 16:10:40,281 INFO   Day 2024-10-11: allocated 2 / 1872 events (seed=331334161)
+2026-08-05 16:10:40,284 INFO   Day 2024-10-14: allocated 3 / 1922 events (seed=1596387605)
+2026-08-05 16:10:40,286 INFO   Day 2024-10-15: allocated 3 / 1987 events (seed=1466836457)
+2026-08-05 16:10:40,289 INFO   Day 2024-10-16: allocated 3 / 2015 events (seed=1981113450)
+2026-08-05 16:10:40,292 INFO   Day 2024-10-17: allocated 3 / 1953 events (seed=1599364551)
+2026-08-05 16:10:40,294 INFO   Day 2024-10-18: allocated 3 / 2011 events (seed=787359109)
+2026-08-05 16:10:40,297 INFO   Day 2024-10-21: allocated 3 / 1941 events (seed=2077711329)
+2026-08-05 16:10:40,300 INFO   Day 2024-10-22: allocated 3 / 1927 events (seed=882294417)
+2026-08-05 16:10:40,302 INFO   Day 2024-10-23: allocated 3 / 1951 events (seed=699704628)
+2026-08-05 16:10:40,305 INFO   Day 2024-10-24: allocated 3 / 1987 events (seed=1944623249)
+2026-08-05 16:10:40,307 INFO   Day 2024-10-25: allocated 3 / 1923 events (seed=795556160)
+2026-08-05 16:10:40,310 INFO   Day 2024-10-28: allocated 3 / 2018 events (seed=163945743)
+2026-08-05 16:10:40,313 INFO   Day 2024-10-29: allocated 3 / 1994 events (seed=1008363426)
+2026-08-05 16:10:40,321 INFO sample_representative complete: 200 events drawn from 70 trading days.
+2026-08-05 16:10:40,323 INFO Sample ready: 200 events, 216 features
+2026-08-05 16:10:40,333 INFO Computing PQFM features: noiseless …
+2026-08-05 16:11:09,216 INFO   noiseless: shape (200, 24)
+2026-08-05 16:11:09,217 INFO Computing PQFM features: noisy …
+2026-08-05 16:11:12,044 INFO   noisy: shape (200, 24)
+2026-08-05 16:11:12,044 INFO Computing PQFM features: idle …
+2026-08-05 16:11:14,657 INFO   idle: shape (200, 24)
+2026-08-05 16:11:14,657 INFO Running backtest: noiseless …
+2026-08-05 16:11:14,659 INFO run_all: starting 8 combinations.
+2026-08-05 16:11:14,659 INFO run_all progress: 0/8 – family=LR, training_size=50, blinding_day=0

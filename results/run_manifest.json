@@ -1,0 +1,25 @@
+{
+  "params": {
+    "n_events_sample": 200,
+    "n_qubits": 8,
+    "training_sizes": [
+      50,
+      100
+    ],
+    "blinding_days": [
+      0,
+      1
+    ],
+    "model_families": [
+      "LR",
+      "XGB"
+    ],
+    "save_dir": "results",
+    "random_seed": 42,
+    "fast": true,
+    "ultrafast": true
+  },
+  "exp1_rows": 880,
+  "exp2_coverage_rows": 3,
+  "exp3_rows": 720
+}

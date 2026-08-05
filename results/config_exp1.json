@@ -1,0 +1,17 @@
+{
+  "n_events_sample": 200,
+  "n_qubits": 8,
+  "training_sizes": [
+    50,
+    100
+  ],
+  "blinding_days": [
+    0,
+    1
+  ],
+  "model_families": [
+    "LR",
+    "XGB"
+  ],
+  "n_result_rows": 880
+}

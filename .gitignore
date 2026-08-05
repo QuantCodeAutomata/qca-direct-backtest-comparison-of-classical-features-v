@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets / env files
+.env
+*.env
+*.key
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Qiskit cache
+qiskit_ibm_provider.json
+
+# Large data artifacts (regenerate with: python data/generate_synthetic_rfq.py)
+data/rfq_active_window.parquet
+data/*.parquet
+data/*.csv
+
+# Large raw API dumps
+data/massive_raw/

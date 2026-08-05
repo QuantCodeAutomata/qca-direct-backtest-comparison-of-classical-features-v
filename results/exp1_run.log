@@ -1,0 +1,117 @@
+2026-08-05 15:47:41,043 INFO Loading RFQ data …
+2026-08-05 15:47:41,043 INFO Loading RFQ data from /workspace/project/data/rfq_active_window.parquet
+2026-08-05 15:47:41,653 INFO Loaded 143912 rows, 222 columns.
+2026-08-05 15:47:41,809 INFO Dataset validated: 143912 rows, 216 feature columns, fill rate=0.4038.
+2026-08-05 15:47:42,057 INFO Temporal filter [2024-07-24, 2024-10-29]: removed 0 events (143912 → 143912).
+2026-08-05 15:47:42,340 INFO Maturity filter: removed 7135 events with maturing bonds (143912 → 136777).
+2026-08-05 15:47:42,449 INFO Sampling 500 events …
+2026-08-05 15:47:42,449 INFO sample_representative: n=500, seed=42
+2026-08-05 15:47:42,492 INFO   Day 2024-07-24: allocated 7 / 1871 events (seed=191664964)
+2026-08-05 15:47:42,495 INFO   Day 2024-07-25: allocated 7 / 1917 events (seed=1662057958)
+2026-08-05 15:47:42,498 INFO   Day 2024-07-26: allocated 7 / 1923 events (seed=1405681632)
+2026-08-05 15:47:42,500 INFO   Day 2024-07-29: allocated 7 / 1979 events (seed=942484272)
+2026-08-05 15:47:42,503 INFO   Day 2024-07-30: allocated 7 / 1996 events (seed=929893138)
+2026-08-05 15:47:42,505 INFO   Day 2024-07-31: allocated 8 / 2016 events (seed=1843824993)
+2026-08-05 15:47:42,510 INFO   Day 2024-08-01: allocated 7 / 1933 events (seed=184566854)
+2026-08-05 15:47:42,512 INFO   Day 2024-08-02: allocated 7 / 1889 events (seed=1497586439)
+2026-08-05 15:47:42,515 INFO   Day 2024-08-05: allocated 8 / 2002 events (seed=432652533)
+2026-08-05 15:47:42,517 INFO   Day 2024-08-06: allocated 7 / 1919 events (seed=202244314)
+2026-08-05 15:47:42,519 INFO   Day 2024-08-07: allocated 7 / 1959 events (seed=1130604998)
+2026-08-05 15:47:42,522 INFO   Day 2024-08-08: allocated 7 / 2002 events (seed=2095133046)
+2026-08-05 15:47:42,524 INFO   Day 2024-08-09: allocated 7 / 1936 events (seed=1580016184)
+2026-08-05 15:47:42,527 INFO   Day 2024-08-12: allocated 7 / 1908 events (seed=1634535063)
+2026-08-05 15:47:42,529 INFO   Day 2024-08-13: allocated 7 / 1924 events (seed=1540770720)
+2026-08-05 15:47:42,532 INFO   Day 2024-08-14: allocated 7 / 1998 events (seed=1688060241)
+2026-08-05 15:47:42,534 INFO   Day 2024-08-15: allocated 7 / 1985 events (seed=1102145673)
+2026-08-05 15:47:42,536 INFO   Day 2024-08-16: allocated 8 / 2025 events (seed=275121931)
+2026-08-05 15:47:42,539 INFO   Day 2024-08-19: allocated 7 / 1967 events (seed=1803345591)
+2026-08-05 15:47:42,541 INFO   Day 2024-08-20: allocated 7 / 1963 events (seed=967196436)
+2026-08-05 15:47:42,543 INFO   Day 2024-08-21: allocated 7 / 1972 events (seed=1074497556)
+2026-08-05 15:47:42,546 INFO   Day 2024-08-22: allocated 7 / 1949 events (seed=796282693)
+2026-08-05 15:47:42,548 INFO   Day 2024-08-23: allocated 7 / 1982 events (seed=392022359)
+2026-08-05 15:47:42,550 INFO   Day 2024-08-26: allocated 7 / 1966 events (seed=1990212659)
+2026-08-05 15:47:42,553 INFO   Day 2024-08-27: allocated 7 / 1983 events (seed=1678403331)
+2026-08-05 15:47:42,555 INFO   Day 2024-08-28: allocated 7 / 1973 events (seed=1382689816)
+2026-08-05 15:47:42,557 INFO   Day 2024-08-29: allocated 7 / 1912 events (seed=864178267)
+2026-08-05 15:47:42,560 INFO   Day 2024-08-30: allocated 7 / 1938 events (seed=1766867110)
+2026-08-05 15:47:42,562 INFO   Day 2024-09-02: allocated 7 / 1962 events (seed=1171300113)
+2026-08-05 15:47:42,565 INFO   Day 2024-09-03: allocated 7 / 1937 events (seed=952224741)
+2026-08-05 15:47:42,567 INFO   Day 2024-09-04: allocated 7 / 1940 events (seed=967354525)
+2026-08-05 15:47:42,569 INFO   Day 2024-09-05: allocated 7 / 1945 events (seed=487991439)
+2026-08-05 15:47:42,572 INFO   Day 2024-09-06: allocated 8 / 2010 events (seed=197860369)
+2026-08-05 15:47:42,574 INFO   Day 2024-09-09: allocated 7 / 1928 events (seed=1190961761)
+2026-08-05 15:47:42,576 INFO   Day 2024-09-10: allocated 7 / 1940 events (seed=1906728919)
+2026-08-05 15:47:42,579 INFO   Day 2024-09-11: allocated 8 / 2007 events (seed=137046513)
+2026-08-05 15:47:42,581 INFO   Day 2024-09-12: allocated 7 / 1936 events (seed=1843166519)
+2026-08-05 15:47:42,583 INFO   Day 2024-09-13: allocated 7 / 1897 events (seed=1777324408)
+2026-08-05 15:47:42,586 INFO   Day 2024-09-16: allocated 7 / 1978 events (seed=594336918)
+2026-08-05 15:47:42,588 INFO   Day 2024-09-17: allocated 7 / 1934 events (seed=1356488968)
+2026-08-05 15:47:42,591 INFO   Day 2024-09-18: allocated 7 / 1988 events (seed=354826746)
+2026-08-05 15:47:42,593 INFO   Day 2024-09-19: allocated 7 / 1863 events (seed=1627981025)
+2026-08-05 15:47:42,595 INFO   Day 2024-09-20: allocated 7 / 1914 events (seed=1504361615)
+2026-08-05 15:47:42,597 INFO   Day 2024-09-23: allocated 7 / 1978 events (seed=761338719)
+2026-08-05 15:47:42,600 INFO   Day 2024-09-24: allocated 7 / 1892 events (seed=145857092)
+2026-08-05 15:47:42,602 INFO   Day 2024-09-25: allocated 7 / 1979 events (seed=2084558134)
+2026-08-05 15:47:42,604 INFO   Day 2024-09-26: allocated 7 / 1947 events (seed=957106590)
+2026-08-05 15:47:42,607 INFO   Day 2024-09-27: allocated 7 / 1902 events (seed=1917963003)
+2026-08-05 15:47:42,609 INFO   Day 2024-09-30: allocated 7 / 1957 events (seed=1455819992)
+2026-08-05 15:47:42,611 INFO   Day 2024-10-01: allocated 7 / 1965 events (seed=1671565831)
+2026-08-05 15:47:42,614 INFO   Day 2024-10-02: allocated 7 / 1933 events (seed=1631871624)
+2026-08-05 15:47:42,616 INFO   Day 2024-10-03: allocated 7 / 1929 events (seed=417983442)
+2026-08-05 15:47:42,619 INFO   Day 2024-10-04: allocated 7 / 1978 events (seed=781482251)
+2026-08-05 15:47:42,621 INFO   Day 2024-10-07: allocated 7 / 1923 events (seed=1002275723)
+2026-08-05 15:47:42,623 INFO   Day 2024-10-08: allocated 7 / 1882 events (seed=1068999196)
+2026-08-05 15:47:42,626 INFO   Day 2024-10-09: allocated 8 / 2003 events (seed=94067870)
+2026-08-05 15:47:42,628 INFO   Day 2024-10-10: allocated 8 / 2042 events (seed=1173749072)
+2026-08-05 15:47:42,630 INFO   Day 2024-10-11: allocated 7 / 1872 events (seed=331334161)
+2026-08-05 15:47:42,633 INFO   Day 2024-10-14: allocated 7 / 1922 events (seed=1596387605)
+2026-08-05 15:47:42,635 INFO   Day 2024-10-15: allocated 7 / 1987 events (seed=1466836457)
+2026-08-05 15:47:42,637 INFO   Day 2024-10-16: allocated 8 / 2015 events (seed=1981113450)
+2026-08-05 15:47:42,640 INFO   Day 2024-10-17: allocated 7 / 1953 events (seed=1599364551)
+2026-08-05 15:47:42,642 INFO   Day 2024-10-18: allocated 8 / 2011 events (seed=787359109)
+2026-08-05 15:47:42,644 INFO   Day 2024-10-21: allocated 7 / 1941 events (seed=2077711329)
+2026-08-05 15:47:42,647 INFO   Day 2024-10-22: allocated 7 / 1927 events (seed=882294417)
+2026-08-05 15:47:42,649 INFO   Day 2024-10-23: allocated 7 / 1951 events (seed=699704628)
+2026-08-05 15:47:42,652 INFO   Day 2024-10-24: allocated 7 / 1987 events (seed=1944623249)
+2026-08-05 15:47:42,654 INFO   Day 2024-10-25: allocated 7 / 1923 events (seed=795556160)
+2026-08-05 15:47:42,656 INFO   Day 2024-10-28: allocated 8 / 2018 events (seed=163945743)
+2026-08-05 15:47:42,659 INFO   Day 2024-10-29: allocated 7 / 1994 events (seed=1008363426)
+2026-08-05 15:47:42,667 INFO sample_representative complete: 500 events drawn from 70 trading days.
+2026-08-05 15:47:42,669 INFO Sample ready: 500 events, 216 classical features, fill rate=0.384
+2026-08-05 15:47:42,669 INFO Computing PQFM features: sim_short …
+  SimulatorRunner: processed 10/500 events
+  SimulatorRunner: processed 20/500 events
+  SimulatorRunner: processed 30/500 events
+  SimulatorRunner: processed 40/500 events
+  SimulatorRunner: processed 50/500 events
+  SimulatorRunner: processed 60/500 events
+  SimulatorRunner: processed 70/500 events
+  SimulatorRunner: processed 80/500 events
+  SimulatorRunner: processed 90/500 events
+  SimulatorRunner: processed 100/500 events
+  SimulatorRunner: processed 110/500 events
+  SimulatorRunner: processed 120/500 events
+Traceback (most recent call last):
+  File "/workspace/project/exp/exp1_direct_backtest.py", line 294, in <module>
+    results = run_exp1()
+              ^^^^^^^^^^
+  File "/workspace/project/exp/exp1_direct_backtest.py", line 194, in run_exp1
+    X_pqfm = runner.transform(X_classical)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/project/exp/../src/simulator_runner.py", line 153, in transform
+    out[i] = self.transform_single(X[i])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/project/exp/../src/simulator_runner.py", line 179, in transform_single
+    return self._run_single(x_pqfm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/project/exp/../src/simulator_runner.py", line 107, in _run_single
+    result = job.result()
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/qiskit/primitives/primitive_job.py", line 72, in result
+    self._result = self._future.result()
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 451, in result
+    self._condition.wait(timeout)
+  File "/usr/local/lib/python3.12/threading.py", line 355, in wait
+    waiter.acquire()
+KeyboardInterrupt
